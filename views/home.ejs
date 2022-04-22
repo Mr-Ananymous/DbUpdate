@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="post" action="/update">
+            User ID: <input type ="text" name="uid" required><br>
+            <label for="ticket">Ticket: </label>
+                    <select name="ticket">
+                        <option value="none">NONE</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select><br>
+            <label for="title">Title: </label>
+                    <select name="title">
+                        <option value="none">NONE</option>
+                        <option value="Cloud">Cloud</option>
+                        <option value="ML">ML</option>
+                        <option value="UI">UI</option>
+                        <option value="Block">Block Chain</option>
+                        <option value="Ethical">Ethical Hacking</option>
+                    </select><br>
+            <button type="submit">Update</button>
+            <button type="submit" formaction="/details">Get Details</button> <br>
+            <!--<button type="submit" formaction="/set">status=Wstatus</button>-->
+        </form>
+    </body>
+</html>
