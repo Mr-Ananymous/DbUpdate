@@ -7,7 +7,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(bp.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect("mongodb+srv://admin-dinesh:dineshv%406028@cluster0.muixm.mongodb.net/samhitaDB", {
     useUnifiedTopology: true,
     //useCreateIndex: true,
     useNewUrlParser: true
